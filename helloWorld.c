@@ -6,15 +6,15 @@
 */
 int main(void) {
 
-    char str1[] = "Hi, what is your name?\n";
+    char str1[20] = "Hi, what is your name?\n";
     int age = 22;
     double gpa = 3.7;
     const int PI_NUM = 3.14;            //constant int
-    char str2[20] = "";
+    char str2[20];
 
 
     printf(str1);
-    scanf("%s", str2);                  //for other types &name, fgets(name, limitOfCharacters, stdin) to take a whole line of text.
+    scanf("%s", str2);                  //for other types &name. fgets(name, limitOfCharacters, stdin) to take a whole line of text.
     printf("Your name is %s.\n", str2);
     
 
