@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 /*
-    My first c program :)
+/    My first c program :)
 */
 int main(void) {
 
