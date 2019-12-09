@@ -10,7 +10,7 @@ int main(void) {
     int age = 22;
     
     double gpa = 3.7;
-    double *pGpa = &gpa;                //declaration of pointer to gpa.
+    double *pGpa = &gpa;                //declaration of pointer to gpa. To dereference this to gpa, use *pGpa.
 
     const int PI_NUM = 3.14;            //constant int.
     char str2[20];
