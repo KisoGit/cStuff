@@ -16,17 +16,22 @@ int main(void) {
 
     struct game game;
     game.numberOfParticipants = 20;
+    game.names;
 
     printf("How many people participate?\n");
     scanf("%d", &game.numberOfParticipants);
 
     for(int i = 0; game.numberOfParticipants > i; i++){
             printf("Please enter the name of the %d. participant!\n", (i + 1));
-            scanf("%s", &game.names[i]);
+        printf("Hi 1\n");
+            scanf("%s", &game.names[i]);            
+        printf("Hi 2\n");
     }
+        printf("Hi 3\n");
 
-    for(int i = 0; game.numberOfParticipants < i; i =+ 2){
-        printf("First game is between %s and %s", game.names[i], game.names[i+1]);
+    for(int k = 0; game.numberOfParticipants > k; k++){
+        printf("Hi 4");
+        printf("First game is between %s and %s", game.names[k], game.names[k+1]);
     }
 
     return 0;
