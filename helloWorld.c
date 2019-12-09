@@ -12,6 +12,12 @@ int main(void) {
     const int PI_NUM = 3.14;            //constant int
     char str2[20];
 
+    int numbers[3][2] = {
+                        {2, 1},
+                        {3, 6},
+                        {5, 2}
+                        };
+
 
     printf(str1);
     scanf("%s", str2);                  //for other types &name. fgets(name, limitOfCharacters, stdin) to take a whole line of text.

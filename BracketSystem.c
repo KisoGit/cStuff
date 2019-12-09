@@ -4,9 +4,17 @@
 /*
 /    My take on a tournament matchmaker.
 */
+struct game{
+    int numberOfParticipants;
+    char names[20];
+    char winners[20];
+    char losers[20];
+};
+
 int main(void) {
 
     struct game game;
+    game.numberOfParticipants = 20;
 
     printf("How many people participate?");
     scanf("%lf", &game.numberOfParticipants);
@@ -23,12 +31,6 @@ int main(void) {
     return 0;
 }
 
-struct game{
-    int numberOfParticipants;
-    char names[20];
-    char winners[20];
-    char losers[20];
-};
 
 void assembleGame() {
 
