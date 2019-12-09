@@ -23,5 +23,7 @@ int main(void) {
     printf("%f", ceil(4.3456));         //rounds up
     printf("%f\n", floor(4.3456));      //rounds down
 
+    strcpy(str1, "next sentence");      //for structs and stuff...
+
     return 0;
 }
