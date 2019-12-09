@@ -19,6 +19,8 @@ int main(void) {
                         };
 
 
+    printf("%p\n", &age);               //acces the address of age.
+
     printf(str1);
     scanf("%s", str2);                  //for other types &name. fgets(name, limitOfCharacters, stdin) to take a whole line of text.
     printf("Your name is %s.\n", str2);
