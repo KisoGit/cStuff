@@ -11,16 +11,17 @@ struct game{
     char losers[20];
 };
 
+
 int main(void) {
 
     struct game game;
     game.numberOfParticipants = 20;
 
-    printf("How many people participate?");
-    scanf("%lf", &game.numberOfParticipants);
+    printf("How many people participate?\n");
+    scanf("%d", &game.numberOfParticipants);
 
-    for(int i = 0; game.numberOfParticipants < i; i++){
-            printf("Please enter the name of the %d. participant!", game.numberOfParticipants);
+    for(int i = 0; game.numberOfParticipants > i; i++){
+            printf("Please enter the name of the %d. participant!\n", (i + 1));
             scanf("%s", &game.names[i]);
     }
 
