@@ -23,14 +23,13 @@ int main(void) {
 
     for(int i = 0; game.numberOfParticipants > i; i++){
             printf("Please enter the name of the %d. participant!\n", (i + 1));
-        printf("Hi 1\n");
             scanf("%s", &game.names[i]);            
-        printf("Hi 2\n");
     }
-        printf("Hi 3\n");
+
+        printf("%d \n", game.numberOfParticipants); //still gets printed but an error accurs in the next for-loop.
 
     for(int k = 0; game.numberOfParticipants > k; k++){
-        printf("Hi 4");
+        
         printf("First game is between %s and %s", game.names[k], game.names[k+1]);
     }
 
